@@ -17,5 +17,11 @@
   "bugs": {
     "url": "https://github.com/brando5393/friend-finder/issues"
   },
-  "homepage": "https://github.com/brando5393/friend-finder#readme"
+  "homepage": "https://github.com/brando5393/friend-finder#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
 }
