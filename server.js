@@ -5,7 +5,9 @@ const port = process.env.Port || 3000;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-// require("./routing/apiRoutes.js")(app);
+require("./routing/apiRoutes.js")(app);
 require("./routing/htmlRoutes.js")(app);
+
+let friends = [];
 
 app.listen(port,() => console.log(`Server started on localhost:${port}`));
