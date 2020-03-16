@@ -1,12 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>Friend Finder | Survey</title>
 </head>
+
 <body>
-    <h1>Survey Page</h1>
-    <p>work in progress</p>
+    <div class="container">
+        <header>
+            <div class="row">
+                <div class="col-12">
+                    <div class="jumbotron">
+                        <h1 class="display-4">Friend Finder Survey</h1>
+                        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae natus corporis id provident voluptatum perferendis excepturi culpa, possimus ullam ea labore deleniti repudiandae molestias delectus! Commodi placeat omnis sunt quod?</p>
+                      </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="row">
+                <div class="col-12">
+                    <div class="survey-container">
+                        <form action="#">
+                            <div class="form-group">
+                                <label for="usersName">What's Your Name?</label>
+                                <input type="text" class="form-control" id="usersName" aria-describedby="usersNameHelp">
+                                <small id="usersNameHelp" class="form-text text-muted">To start with, What is your name</small>
+                              </div>
+                              <div class="form-group">
+                                <label for="photoLink">Photo Link</label>
+                                <input type="text" class="form-control" id="photoLink" aria-describedby="photoLinkHelp">
+                                <small id="photoLinkHelp" class="form-text text-muted">Add a link to a photo of yourself so we can put a face to your name.</small>
+                              </div>
+                              <hr>
+                              <h3 class="question-text">QUESTION 1: I enjoy being in places with large crowds.</h3>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="question1" id="question1-always" value="3">
+                                <label class="form-check-label" for="question1-always">Always</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="question1" id="question1-sometimes" value="2">
+                                <label class="form-check-label" for="question1-sometimes">Sometimes</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="question1" id="question1-never" value="1">
+                                <label class="form-check-label" for="question1-never">Never</label>
+                              </div>
+
+                              <h3 class="question-text">QUESTION 2: I prefer to stay in on a Friday night.</h3>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="question2" id="question2-always" value="3">
+                                <label class="form-check-label" for="always">Always</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="question2" id="question2-sometimes" value="2">
+                                <label class="form-check-label" for="inlineRadio2">Sometimes</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="question2" id="question2-never" value="1">
+                                <label class="form-check-label" for="inlineRadio3">Never</label>
+                              </div>
+                              
+                              <h3 class="question-text">QUESTION 3: Given the choice between going to a concert or visiting with friends, I would choose to visit with friends.</h3>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="question3" id="question3-always" value="3">
+                                <label class="form-check-label" for="always">Always</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="question3" id="question3-sometimes" value="2">
+                                <label class="form-check-label" for="inlineRadio2">Sometimes</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="question3" id="question3-never" value="1">
+                                <label class="form-check-label" for="inlineRadio3">Never</label>
+                              </div>
+                              
+                              <h3 class="question-text">QUESTION 4: I find it easier to get to know someone in person vs online or long distance.</h3>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="question4" id="question4-always" value="3">
+                                <label class="form-check-label" for="always">Always</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="question4" id="question4-sometimes" value="2">
+                                <label class="form-check-label" for="inlineRadio2">Sometimes</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="question4" id="question4-never" value="1">
+                                <label class="form-check-label" for="inlineRadio3">Never</label>
+                              </div>
+                              
+                              <h3 class="question-text">QUESTION 5: Having "alone time" is important to me.</h3>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="question5" id="question5-always" value="3">
+                                <label class="form-check-label" for="always">Always</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="question5" id="question5-sometimes" value="2">
+                                <label class="form-check-label" for="inlineRadio2">Sometimes</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="question5" id="question5-never" value="1">
+                                <label class="form-check-label" for="inlineRadio3">Never</label>
+                              </div>
+                              
+                              <h3 class="question-text">QUESTION 6: I am a self-motivated</h3>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="question6" id="question6-always" value="3">
+                                <label class="form-check-label" for="always">Always</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="question6" id="question6-sometimes" value="2">
+                                <label class="form-check-label" for="inlineRadio2">Sometimes</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="question6" id="question6-never" value="1">
+                                <label class="form-check-label" for="inlineRadio3">Never</label>
+                              </div>
+                              
+                              <h3 class="question-text">QUESTION 7: I act on impulse.</h3>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="question7" id="question7-always" value="3">
+                                <label class="form-check-label" for="always">Always</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="question7" id="question7-sometimes" value="2">
+                                <label class="form-check-label" for="inlineRadio2">Sometimes</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="question7" id="question7-never" value="1">
+                                <label class="form-check-label" for="inlineRadio3">Never</label>
+                              </div>
+                              
+                              <h3 class="question-text">QUESTION 8: I tend to be ruled by my emotions.</h3>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="question8" id="question8-always" value="3">
+                                <label class="form-check-label" for="always">Always</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="question8" id="question8-sometimes" value="2">
+                                <label class="form-check-label" for="inlineRadio2">Sometimes</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="question8" id="question8-never" value="1">
+                                <label class="form-check-label" for="inlineRadio3">Never</label>
+                              </div>
+                              
+                              <h3 class="question-text">QUESTION 9: I have a tendency to spoil myself.</h3>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="question9" id="question9-always" value="3">
+                                <label class="form-check-label" for="always">Always</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="question9" id="question9-sometimes" value="2">
+                                <label class="form-check-label" for="inlineRadio2">Sometimes</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="question9" id="question9-never" value="1">
+                                <label class="form-check-label" for="inlineRadio3">Never</label>
+                              </div>
+                              
+                              <h3 class="question-text">QUESTION 10: I have difficulty takeing constructive criticism.</h3>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="question10" id="question10-always" value="3">
+                                <label class="form-check-label" for="always">Always</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="question10" id="question10-sometimes" value="2">
+                                <label class="form-check-label" for="inlineRadio2">Sometimes</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="question10" id="question10-never" value="1">
+                                <label class="form-check-label" for="inlineRadio3">Never</label>
+                              </div>
+                              <br>
+                              <button type="submit" class="btn btn-success btn-lg btn-block">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer>
+
+    </footer>
+    <!-- bootstrap js -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
+
 </html>
