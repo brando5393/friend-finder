@@ -8,6 +8,4 @@ app.use(express.json());
 require("./routing/apiRoutes.js")(app);
 require("./routing/htmlRoutes.js")(app);
 
-let friends = [];
-
 app.listen(port,() => console.log(`Server started on localhost:${port}`));
